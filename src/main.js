@@ -60,7 +60,7 @@ const start = r => {
 		}
 		recognition.onresult = event => {
 			const res = event.results[0][0].transcript
-			if(/nathan|pham|talon|ethan|fam/.test(res.toLowerCase())) {
+			if(/than|pham|talon|fam|fan/.test(res.toLowerCase())) {
 				alarm()
 			}
 		}
